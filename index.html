@@ -13,7 +13,7 @@
   <input type="file" id="cvsfile" onchange="loadCSVFile(event);">
   <br><br>
   <div> <label> Input:  </label> </div>
-  <textarea rows=10 cols=25 id="inputMessage"></textarea>
+  <textarea onchange="readInput(event);" rows=10 cols=25 id="inputMessage"></textarea>
   <div> <label> Output:  </label> </div>
   <textarea rows=10 cols=25 id="outputMessage"></textarea>
 
