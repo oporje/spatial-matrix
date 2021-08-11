@@ -2,6 +2,8 @@ function getSpatialNeighbours(twoDArray, i, j) {
   let jLength = twoDArray[i].length - 1;
   let iLength = twoDArray.length - 1;
 
+  // find all spatial neighbours in 4 directions and append all of them (if present)
+
   if (i == 0 && j == 0) {
     return `${twoDArray[i][j + 1]}${twoDArray[i + 1][j]}`;
   } else if (i == 0 && j > 0 && j < jLength) {
