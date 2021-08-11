@@ -1,4 +1,8 @@
-To run solution - clone repo , open the index.html , upload the test-csv file from save folder and see the output.
+To run solution - 
+clone repo 
+open the index.html 
+upload the test-csv file from same folder and see the output in second text area.
+
 (You can change the test-csv file and reupload to see changes)
 1) Open csv
 2) split data into 2d matrix
