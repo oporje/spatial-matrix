@@ -1,4 +1,4 @@
-To run solution - 
+To run - 
 clone repo 
 open the index.html 
 upload the test-csv file from same folder and see the output in second text area.
