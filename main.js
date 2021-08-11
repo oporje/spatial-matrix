@@ -24,7 +24,7 @@ function getSpatialNeighbours(twoDArray, i, j) {
 
 }
 
-
+// read csv data from file
 function loadCSVFile (event) {
     var csvfile = event.target.files[0];
 
@@ -33,14 +33,12 @@ function loadCSVFile (event) {
         var outputMessage = document.getElementById("outputMessage");
         var reader       = new FileReader();
 
-        // Called after starting a read operation to initialize the textareas and the matrix
+        // listeners for csv file upload
         reader.onloadstart = function () {
             inputMessage.value   = "";
             outputMessage.value = "";
         }
 
-        // Called when a read operation successfully completes. It separates the CSV headings
-        // from the values and process them. Everything gets stored in the textareas and the matrix.
         reader.onload  = function () {
             var inputArray  = reader.result.split(reader.result.indexOf("\r") > 0 ? "\r\n" : "\n");
             var delim  = inputArray[0].indexOf(",") == -1 ? " " : ",";
